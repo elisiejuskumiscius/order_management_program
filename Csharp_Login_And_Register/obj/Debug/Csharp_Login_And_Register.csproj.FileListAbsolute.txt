@@ -1,0 +1,53 @@
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe.config
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csprojResolveAssemblyReference.cache
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.LoginForm.resources
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.Properties.Resources.resources
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.GenerateResource.Cache
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.pdb
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.exe
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.pdb
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\mysql.data.dll
+c:\users\1bestcsharp\documents\visual studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.RegisterForm.resources
+C:\Users\1BestCsharp\Documents\Visual Studio 2013\Projects\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.MainForm.resources
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe.config
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.exe
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.pdb
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.pdb
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csprojResolveAssemblyReference.cache
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.LoginForm.resources
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.MainForm.resources
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.Properties.Resources.resources
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.RegisterForm.resources
+C:\Users\1BestCsharp\Downloads\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.GenerateResource.Cache
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe.config
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.pdb
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csprojAssemblyReference.cache
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.LoginForm.resources
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.MainForm.resources
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.Properties.Resources.resources
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.RegisterForm.resources
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.GenerateResource.cache
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.CoreCompileInputs.cache
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.CopyComplete
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.exe
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.pdb
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Database.mdf
+C:\Users\phosi\OneDrive\Desktop\Csharp_Login_And_Register\Csharp_Login_And_Register\bin\Debug\Database_log.ldf
+D:\order_management_program\Csharp_Login_And_Register\bin\Debug\Database.mdf
+D:\order_management_program\Csharp_Login_And_Register\bin\Debug\Database_log.ldf
+D:\order_management_program\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe.config
+D:\order_management_program\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.exe
+D:\order_management_program\Csharp_Login_And_Register\bin\Debug\Csharp_Login_And_Register.pdb
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csprojAssemblyReference.cache
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.LoginForm.resources
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.MainForm.resources
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.Properties.Resources.resources
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.RegisterForm.resources
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.GenerateResource.cache
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.CoreCompileInputs.cache
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.csproj.CopyComplete
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.exe
+D:\order_management_program\Csharp_Login_And_Register\obj\Debug\Csharp_Login_And_Register.pdb
