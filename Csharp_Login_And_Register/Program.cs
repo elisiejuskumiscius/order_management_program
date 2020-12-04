@@ -8,6 +8,8 @@ namespace Csharp_Login_And_Register
 {
     static class Program
     {
+        internal static bool Logoff;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

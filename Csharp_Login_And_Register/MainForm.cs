@@ -21,5 +21,12 @@ namespace Csharp_Login_And_Register
         {
             Application.Exit();
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            //Program.Logoff = true;
+            //Close();
+        }
     }
 }

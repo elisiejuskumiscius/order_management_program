@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Csharp_Login_And_Register
 {
@@ -23,6 +22,7 @@ namespace Csharp_Login_And_Register
         {
             // remove the focus from the textboxes
             this.ActiveControl = label1;
+            conn.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = D:\\order_management_program\\Csharp_Login_And_Register\\Database.mdf; Integrated Security = True";
         }
 
         private void textBoxFirstname_Enter(object sender, EventArgs e)
@@ -157,7 +157,6 @@ namespace Csharp_Login_And_Register
             Application.Exit();
         }
 
-
         private void labelClose_MouseEnter(object sender, EventArgs e)
         {
             labelClose.ForeColor = Color.Black;
@@ -168,69 +167,77 @@ namespace Csharp_Login_And_Register
             labelClose.ForeColor = Color.White;
         }
 
+        SqlConnection conn = new SqlConnection();
+
+        SqlConnection getConnection()
+        {
+            return conn;
+        }
+
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
-            // add a new user
+           try
+           {
+                conn.Open();
 
-            DB db = new DB();
-            SqlCommand command = new SqlCommand("INSERT INTO `users`(`firstname`, `lastname`, `emailaddress`, `username`, `password`) VALUES (@fn, @ln, @email, @usn, @pass)", db.getConnection());
+                SqlCommand command = new SqlCommand("INSERT INTO users(firstname, lastname, emailaddress, username, password) VALUES (@fn, @ln, @email, @usn, @pass)", getConnection());
 
-            command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = textBoxFirstname.Text;
-            command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = textBoxLastname.Text;
-            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
-            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
+                command.Parameters.Add("@fn", SqlDbType.VarChar).Value = textBoxFirstname.Text;
+                command.Parameters.Add("@ln", SqlDbType.VarChar).Value = textBoxLastname.Text;
+                command.Parameters.Add("@email", SqlDbType.VarChar).Value = textBoxEmail.Text;
+                command.Parameters.Add("@usn", SqlDbType.VarChar).Value = textBoxUsername.Text;
+                command.Parameters.Add("@pass", SqlDbType.VarChar).Value = textBoxPassword.Text;
 
-            // open the connection
-            db.openConnection();
+                // open the connection
+                //db.openConnection();
 
-            // check if the textboxes contains the default values 
-            if (!checkTextBoxesValues())
-            {
-                // check if the password equal the confirm password
-                if(textBoxPassword.Text.Equals(textBoxPasswordConfirm.Text))
+                // check if the textboxes contains the default values 
+                if (!checkTextBoxesValues())
                 {
-                    // check if this username already exists
-                    if (checkUsername())
+                    // check if the password equal the confirm password
+                    if (textBoxPassword.Text.Equals(textBoxPasswordConfirm.Text))
                     {
-                        MessageBox.Show("This Username Already Exists, Select A Different One","Duplicate Username",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        // execute the query
-                        if (command.ExecuteNonQuery() == 1)
+                        // check if this username already exists
+                        if (checkUsername())
                         {
-                            MessageBox.Show("Your Account Has Been Created","Account Created",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                            MessageBox.Show("This Username Already Exists, Select A Different One", "Duplicate Username", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show("ERROR");
+                            // execute the query
+                            if (command.ExecuteNonQuery() == 1)
+                            {
+                                MessageBox.Show("Your Account Has Been Created", "Account Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("ERROR");
+                            }
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("Wrong Confirmation Password", "Password Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("Wrong Confirmation Password","Password Error",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+                    MessageBox.Show("Enter Your Informations First", "Empty Data", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                 }
-                
-            }
-            else
-            {
-                MessageBox.Show("Enter Your Informations First","Empty Data",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            }
-            
-            
 
-            // close the connection
-            db.closeConnection();
 
+                conn.Close();
+            }
+            catch (Exception ex)
+           {
+               MessageBox.Show(ex.Message);
+           }
         }
-
         
         // check if the username already exists
         public Boolean checkUsername()
         {
-            DB db = new DB();
 
             String username = textBoxUsername.Text;
 
@@ -238,7 +245,7 @@ namespace Csharp_Login_And_Register
 
             SqlDataAdapter adapter = new SqlDataAdapter();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM `users` WHERE `username` = @usn", db.getConnection());
+            SqlCommand command = new SqlCommand("SELECT * FROM users WHERE username = @usn", getConnection());
 
             command.Parameters.Add("@usn", SqlDbType.VarChar).Value = username;
 
@@ -296,7 +303,6 @@ namespace Csharp_Login_And_Register
             LoginForm loginform = new LoginForm();
             loginform.Show();
         }
-
 
     }
 }
