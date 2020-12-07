@@ -1,0 +1,43 @@
+[
+  {
+    "OrderNum": 1,
+    "Items": [
+      { "ItemName": "Phone" },
+      { "ItemName": "Keyboard" }
+    ],
+    "Customers": [
+      { "CustName": "Tadas Tadaitis" },
+      { "CustNum": 1 }
+    ]
+  },
+  {
+    "OrderNum": 2,
+    "Items": [
+      { "ItemName": "Laptop" },
+      { "ItemName": "Monitor" },
+      { "ItemName": "Microphone" }
+    ],
+    "Customers": [
+      { "CustName": "Jonas Jonaitis" },
+      { "CustNum": 2 }
+    ]
+  },
+  {
+    "OrderNum": 3,
+    "Items": [
+      { "ItemName": "Mouse" }
+    ],
+    "Customers": [
+      { "CustName": "Paulius Paulinskas" },
+      { "CustNum": 3 }
+    ]
+  },
+  {
+    "OrderNum": 4,
+    "Items": [],
+    "Customers": [
+      { "CustName": "Petras Petraitis" },
+      { "CustNum": 4 }
+    ]
+  }
+]

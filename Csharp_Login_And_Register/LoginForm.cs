@@ -48,8 +48,8 @@ namespace Csharp_Login_And_Register
                 return;
             }
 
-            try
-            {
+           // try
+            //{
                 //Create SqlConnection
                 SqlConnection con = new SqlConnection(cs);
                 SqlCommand cmd = new SqlCommand("Select * from Users where Username=@username and Password=@password", con);
@@ -66,18 +66,18 @@ namespace Csharp_Login_And_Register
                 {
                     MessageBox.Show("Login Successful!");
                     this.Hide();
-                    MainForm mf = new MainForm();
-                    mf.Show();
+                    OrderList orderList = new OrderList();
+                    orderList.Show();
                 }
                 else
                 {
                     MessageBox.Show("Login Failed!");
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+           // }
+           // catch (Exception ex)
+           // {
+             //   MessageBox.Show(ex.Message);
+           // }
         }
 
         private void labelGoToSignUp_Click(object sender, EventArgs e)
