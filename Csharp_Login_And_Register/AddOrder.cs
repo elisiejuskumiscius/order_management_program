@@ -28,7 +28,6 @@ namespace Csharp_Login_And_Register
         {
             this.Hide();
             orderListForm.Show();
-
         }
 
         private void btnCreateOrder_Click(object sender, EventArgs e)

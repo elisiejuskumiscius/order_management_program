@@ -20,7 +20,6 @@ namespace Csharp_Login_And_Register
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
-            // remove the focus from the textboxes
             this.ActiveControl = label1;
             conn.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = D:\\order_management_program\\Csharp_Login_And_Register\\Database.mdf; Integrated Security = True";
         }
@@ -153,7 +152,6 @@ namespace Csharp_Login_And_Register
 
         private void labelClose_Click(object sender, EventArgs e)
         {
-            //this.Close();
             Application.Exit();
         }
 
@@ -188,16 +186,11 @@ namespace Csharp_Login_And_Register
                 command.Parameters.Add("@usn", SqlDbType.VarChar).Value = textBoxUsername.Text;
                 command.Parameters.Add("@pass", SqlDbType.VarChar).Value = textBoxPassword.Text;
 
-                // open the connection
-                //db.openConnection();
 
-                // check if the textboxes contains the default values 
                 if (!checkTextBoxesValues())
                 {
-                    // check if the password equal the confirm password
                     if (textBoxPassword.Text.Equals(textBoxPasswordConfirm.Text))
                     {
-                        // check if this username already exists
                         if (checkUsername())
                         {
                             MessageBox.Show("This Username Already Exists, Select A Different One", "Duplicate Username", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
@@ -235,7 +228,6 @@ namespace Csharp_Login_And_Register
            }
         }
         
-        // check if the username already exists
         public Boolean checkUsername()
         {
 
@@ -253,7 +245,6 @@ namespace Csharp_Login_And_Register
 
             adapter.Fill(table);
 
-            // check if this username already exists in the database
             if (table.Rows.Count > 0)
             {
                 return true;
@@ -265,7 +256,6 @@ namespace Csharp_Login_And_Register
 
         }
 
-        // check if the textboxes contains the default values
         public Boolean checkTextBoxesValues()
         {
             String fname = textBoxFirstname.Text;

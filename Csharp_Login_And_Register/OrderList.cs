@@ -67,14 +67,12 @@ namespace Csharp_Login_And_Register
             var addOrder = new AddOrder(this);
             addOrder.ShowDialog();
             loadList();
-                     
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
 
     }
 }

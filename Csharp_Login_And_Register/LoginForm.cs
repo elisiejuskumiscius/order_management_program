@@ -34,7 +34,6 @@ namespace Csharp_Login_And_Register
 
         private void labelClose_Click(object sender, EventArgs e)
         {
-            //this.Close();
             Application.Exit();
         }
         string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\order_management_program\Csharp_Login_And_Register\Database.mdf;Integrated Security=True";
@@ -48,9 +47,8 @@ namespace Csharp_Login_And_Register
                 return;
             }
 
-           // try
-            //{
-                //Create SqlConnection
+            try
+            {
                 SqlConnection con = new SqlConnection(cs);
                 SqlCommand cmd = new SqlCommand("Select * from Users where Username=@username and Password=@password", con);
                 cmd.Parameters.AddWithValue("@username", textBoxUsername.Text);
@@ -61,7 +59,6 @@ namespace Csharp_Login_And_Register
                 adapt.Fill(ds);
                 con.Close();
                 int count = ds.Tables[0].Rows.Count;
-                //If count is equal to 1, than show frmMain form
                 if (count == 1)
                 {
                     MessageBox.Show("Login Successful!");
@@ -73,11 +70,11 @@ namespace Csharp_Login_And_Register
                 {
                     MessageBox.Show("Login Failed!");
                 }
-           // }
-           // catch (Exception ex)
-           // {
-             //   MessageBox.Show(ex.Message);
-           // }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void labelGoToSignUp_Click(object sender, EventArgs e)
